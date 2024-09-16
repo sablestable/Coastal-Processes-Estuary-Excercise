@@ -179,10 +179,10 @@ for elevation in years:
 
 Estuary_SLR3['Depth'] = Estuary_SLR3['Sea Level'] - Estuary_SLR3['Elevation']
 
-Scenario_1_plot = Estuary_basic_df.plot.line(x='Year', title = 'Scenario 1: No Acceleration to SLR')
-Scenario_2_plot = Estuary_SLR1.plot.line(x='Year', title = 'Scenario 2: 2% Acceleration in SLR')
-Scenario_3_plot = Estuary_SLR2.plot.line(x='Year', title = 'Scenario 3: 5% Acceleration in SLR')
-Scenario_4_plot = Estuary_SLR3.plot.line(x='Year', title = 'Scenario 4: 7% Acceleration in SLR')
+Scenario_1_plot = Estuary_basic_df.plot.line(x='Year', title = 'Scenario 1: No Acceleration to SLR', ylabel = 'meters')
+Scenario_2_plot = Estuary_SLR1.plot.line(x='Year', title = 'Scenario 2: 2% Acceleration in SLR', ylabel = 'meters')
+Scenario_3_plot = Estuary_SLR2.plot.line(x='Year', title = 'Scenario 3: 5% Acceleration in SLR', ylabel = 'meters')
+Scenario_4_plot = Estuary_SLR3.plot.line(x='Year', title = 'Scenario 4: 7% Acceleration in SLR', ylabel = 'meters')
 
 
 #For Fun ! Make elevation overtake SLR 
@@ -219,4 +219,4 @@ for elevation in years:
 Estuary_SLRfun['Depth'] = Estuary_SLRfun['Sea Level'] - Estuary_SLRfun['Elevation']
 
 
-Scenario_fun_plot = Estuary_SLRfun.plot.line(x='Year', title = 'Scenario fun: Vertical Accretion = 8 cm / year and a 7% Acceleration in SLR')
+Scenario_fun_plot = Estuary_SLRfun.plot.line(x='Year', title = 'Scenario fun: Vertical Accretion = 8 cm / year and a 7% Acceleration in SLR', ylabel = 'meters')
